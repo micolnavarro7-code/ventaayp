@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/venta", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/venta", "destination": "/index.html" },
+    { "source": "/venta/:path*", "destination": "/:path*" }
+  ]
+}
