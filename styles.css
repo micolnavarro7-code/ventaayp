@@ -118,12 +118,12 @@ img{ max-width:100%; }
 .nav__links{ display:flex; align-items:center; gap:clamp(12px,2.2vw,30px); }
 .nav__links a{ font-size:var(--t-small); color:var(--ink-2); transition:color .3s; }
 .nav__links a:hover{ color:var(--ink); }
-.nav__cta{
+.nav__links a.nav__cta{
   color:#fff; background:var(--green); border-radius:999px;
   padding:9px 20px; font-weight:500;
   transition:background .3s var(--ease);
 }
-.nav__cta:hover{ background:var(--green-dk); color:#fff; }
+.nav__links a.nav__cta:hover{ background:var(--green-dk); color:#fff; }
 @media (max-width:860px){ .nav__links a.nav__hide{ display:none; } }
 
 /* ---------------- hero ---------------- */
