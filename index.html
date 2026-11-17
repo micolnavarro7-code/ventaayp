@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+<script>
+  (function (w, d, s, u) {
+    if (w.oaiq) return;
+    var q = function () { q.q.push(arguments); };
+    q.q = [];
+    w.oaiq = q;
+    var js = d.createElement(s);
+    js.async = true;
+    js.src = u;
+    var f = d.getElementsByTagName(s)[0];
+    f.parentNode.insertBefore(js, f);
+  })(window, document, "script", "https://bzrcdn.openai.com/sdk/oaiq.min.js");
+
+  oaiq("init", { pixelId: "L95q1sX6N6oeYNtqLqMVmS" });
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>A&P Real Estate · Vende tu piso en Madrid, Valladolid y Valencia</title>
@@ -316,5 +331,15 @@
 </a>
 
 <script src="/venta/main.js"></script>
+<script>
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest("a[href]");
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf("wa.me") !== -1 || href.indexOf("tel:") === 0) {
+      oaiq("measure", "lead_created", { type: "customer_action" });
+    }
+  });
+</script>
 </body>
 </html>
