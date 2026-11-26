@@ -32,6 +32,7 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Archivo:wght@300;400;500;600&display=swap">
 <link rel="stylesheet" href="/venta/styles.css">
+<link rel="stylesheet" href="/venta/contacto.css">
 
 <!-- ============================================================
      PLACEHOLDER · PÍXEL DE CONVERSIÓN
@@ -250,18 +251,15 @@
   <div class="wrap">
     <div class="cta-wa reveal">
       <span class="label" style="color:#fff">Tu valoración gratuita</span>
-      <h2 class="h2">Escríbenos y mira lo que vale tu piso.<br><em style="color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5)">Sin compromiso.</em></h2>
-      <p class="lead" style="color:#C7D4E1;margin-inline:auto">Nos cuentas cómo es tu piso por WhatsApp y te preparamos la valoración —precio hoy y precio tras reforma—. Te decimos qué camino te conviene y te lo explicamos nosotros mismos. Gratis y sin compromiso.</p>
+      <h2 class="h2">Déjanos tu teléfono y mira lo que vale tu piso.<br><em style="color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.5)">Sin compromiso.</em></h2>
+      <p class="lead" style="color:#C7D4E1;margin-inline:auto">Te llamamos, nos cuentas cómo es tu piso y te preparamos la valoración —precio hoy y precio tras reforma—. Te decimos qué camino te conviene y te lo explicamos nosotros mismos. Gratis y sin compromiso.</p>
       <ul class="formlist formlist--center">
         <li>Valoración con cifras de tu caso</li>
         <li>Te decimos qué camino te conviene</li>
         <li>Hablas con Pedro o Álex, respuesta rápida</li>
       </ul>
-      <a class="btn btn--wa cta-wa__btn" id="waStudyBtn" href="#" target="_blank" rel="noopener" data-cta="valoracion-wa">
-        <svg viewBox="0 0 32 32" fill="currentColor" width="20" height="20" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.2 1.6 6L4 29l8.2-1.6c1.8.9 3.8 1.4 5.8 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.8-.3-.4c-1-1.6-1.5-3.4-1.5-5.3C4.9 9.5 9.9 4.9 16 4.9c6 0 10.1 4.8 10.1 10.1S22 24.8 16 24.8z"/></svg>
-        Pide tu valoración por WhatsApp
-      </a>
-      <p class="cta-wa__num">O escribe directamente al <a href="https://wa.me/34605449916" target="_blank" rel="noopener">+34 605 44 99 16</a></p>
+      <div id="aypForm" style="--ayp-accent:#1F3A5F;--ayp-accent-dk:#16293F" data-endpoint="https://script.google.com/macros/s/AKfycbzl9ZxxxqQVPvpCXLhE7NyMcdOGPaU6sVnIhneXBv6fs2II-phAViCOg-TBHNMY2JPa/exec" data-landing="Venta" data-boton="Pide tu valoración"></div>
+      <p class="ayp-wa-alt">¿Prefieres WhatsApp? <a id="waStudyBtn" href="https://wa.me/34605449916" target="_blank" rel="noopener">Escríbenos al +34 605 44 99 16</a></p>
     </div>
   </div>
 </section>
@@ -331,6 +329,7 @@
 </a>
 
 <script src="/venta/main.js"></script>
+<script src="/venta/contacto.js"></script>
 <script>
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest("a[href]");
